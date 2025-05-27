@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Development Portfolio</title>
+  <style>
+    :root {
+      --blue-1: #41b6e6;
+      --blue-2: #7ecbe8;
+      --blue-3: #b4e0f3;
+      --blue-4: #ecf8fc;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--blue-4);
+      color: #1a1a1a;
+    }
+
+    nav {
+      background-color: var(--blue-1);
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--white);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--blue-3);
+    }
+
+    header {
+      background-color: var(--blue-2);
+      color: #1c1c1c;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+
+    .bio p, .skills ul {
+      line-height: 1.6;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background-color: var(--blue-3);
+      margin-bottom: 10px;
+      padding: 10px;
+      border-left: 5px solid var(--blue-1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--blue-2);
+      color: #1a1a1a;
+    }
+  </style>
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>"Don't be afraid to give up the good to go for the great." – John D. Rockefeller</p>
+  </header>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <figure style="text-align: center;">
+      <img src="chase-colston.jpg" alt="Chase Colston" style="width: 200px; height: 200px; object-fit: cover; object-position: top; border-radius: 100px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: block; margin-left: auto; margin-right: auto; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+      <figcaption style="margin-top: 10px; color: #333; font-size: 0.95em;">Chase Colston</figcaption>
+    </figure>
+  </div>
+
+  <section class="bio">
+    <h2>About Me</h2>
+    <p>Hello,</p>
+    <p>I'm currently a senior at Texas State University (TXST), majoring in business management with a concentration in entrepreneurial studies. I envision myself pursuing a career in this field. Additionally, I serve as the president of the Entrepreneurial Innovations Group, a global organization that allows students to collaborate with entrepreneurs from different countries on startup projects, ultimately transforming these ideas into successful businesses.</p>
+    <p>I have also participated in various leadership and organizational behavior programs at TXST, one of which equipped me with valuable skills and knowledge in digital marketing. Currently, I am in the process of developing my own mental health company. My focus is on creating a space where individuals can cultivate sustainable connections, which I believe are crucial for mental wellness. By fostering these connections, I aim to guide people on a long healing journey that is tailored to their unique experiences and needs.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS (Beginner)</li>
+      <li>Relational Leadership Principles</li>
+      <li>Team Collaboration & Communication</li>
+      <li>Project Planning & Organization</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chase Colston</p>
+  </footer>
 </body>
 </html>
